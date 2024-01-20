@@ -28,6 +28,18 @@ app.post('/V1/student/AddData',async(req,res) => {
      const document = {
         _id: new mongoose.Types.ObjectId(),
         name:data.name,
+        gravatar:data.gravatar,
+        teachStack:data.teachStack,
+        location:data.location,
+        fieldOfInterest:data.fieldOfInterest,
+        seeking:data.seeking,
+        bio:data.bio,
+        githubURL:data.githubURL,
+        twitterURL:data.twitterURL,
+        linkedinURL:data.linkedinURL,
+         
+         
+         
      }
     const newStudent = await StudentModel.create( document)
     res.status(200).send('User is Succesfully addded')
