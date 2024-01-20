@@ -150,9 +150,9 @@ const Mainitem = () => {
       <DatePicker onChange={onChange} value={value} />
 
       </div>
-      <div className="ml-4 m-[5px] px-2 border-solid border-2  border-b-4 border-r-4 border-gray-600">
+      <div className="ml-4 ">
       <form className="flex items-center">   
-      <input type="text" onChange={(e)=> SetSeachitem(e.target.value)} placeholder="Search..."/>
+      <input type="text" className=" m-[5px] px-2 border-solid border-2  border-b-4 border-r-4 border-gray-600" onChange={(e)=> SetSeachitem(e.target.value)} placeholder="Search..."/>
 
     
       </form>
